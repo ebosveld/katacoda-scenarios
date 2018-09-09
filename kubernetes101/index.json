@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/katacoda/scenario-example/master/example-index-json/index.jsonschema",
 	"title": "Kubernetes 101",
 	"description": "Workshop Kubernetes 101 gives a basic understanding of deploying apps to a Kubernetes cluster",
 	"difficulty": "beginner",
@@ -19,6 +20,11 @@
 			"text": "finish.md"
 		}
 	},
+	"files": [
+		"deployment.yaml",
+		"service.yaml",
+		"ingress.yaml"
+	],
 	"environment": {
 		"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nYour Kubernetes cluster is started in the background\u001b[m\r\n"
