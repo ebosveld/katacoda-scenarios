@@ -7,8 +7,20 @@
 	"details": {
 		"steps": [
 			{
-				"title": "Step 1 - Run Command",
+				"title": "Step 1 - Deploying your app",
 				"text": "step1.md"
+			},
+			{
+				"title": "Step 2 - Setup service",
+				"text": "step2.md"
+			},
+			{
+				"title": "Step 3 - Create load balancer",
+				"text": "step3.md"
+			},
+			{
+				"title": "Step 4 - Make it reachable",
+				"text": "step4.md"
 			}
 		],
 		"intro": {
