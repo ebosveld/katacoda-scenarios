@@ -2,7 +2,7 @@ To get started we're going to create a deployment object. This is one of the mos
 ## Task
 Copy the definition from below. This launches an application called _webapp1_ which uses the `katacoda/docker-http-server` docker image for it's containers on port _80_. This is just a basic NGINX web server which echoes the host name back.
 
-<pre class="dockerfile" data-filename="deployment.yaml" data-target="replace">
+<pre class="file dockerfile" data-filename="deployment.yaml" data-target="replace">
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
