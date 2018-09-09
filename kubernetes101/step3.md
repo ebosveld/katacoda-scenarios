@@ -1,0 +1,39 @@
+## Task
+<pre class="file dockerfile" data-filename="ingress.yaml" data-target="replace">
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nginx-ingress-rc
+  labels:
+    app: nginx-ingress
+spec:
+  replicas: 1
+  selector:
+    app: nginx-ingress
+  template:
+    metadata:
+      labels:
+        app: nginx-ingress
+    spec:
+      containers:
+      - image: nginxdemos/nginx-ingress:0.9.0
+        name: nginx-ingress
+        ports:
+        - containerPort: 80
+          hostPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-ingress-lb
+  labels:
+    app: nginx-ingress
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    name: http
+    targetPort: 80
+  selector:
+    app: nginx-ingress
+</pre>

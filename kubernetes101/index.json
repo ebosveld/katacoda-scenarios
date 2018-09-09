@@ -35,7 +35,8 @@
 	"files": [
 		"deployment.yaml",
 		"service.yaml",
-		"ingress.yaml"
+		"ingress.yaml",
+		"routing.yaml"
 	],
 	"environment": {
 		"uilayout": "editor-terminal",
