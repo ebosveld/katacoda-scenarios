@@ -1,4 +1,4 @@
-To get started we're going to create a deployment object. This is one of the most commonly used object and represents a set of containers - or _replicas_.
+To get started we're going to create a deployment object. This is one of the most commonly used object and represents a set of pods - or _replicas_.
 
 ## Task
 Copy the definition from below. This launches an application called _webapp1_ which uses the `katacoda/docker-http-server` docker image for it's containers on port _80_. This is just a basic NGINX web server which echoes the host name back.

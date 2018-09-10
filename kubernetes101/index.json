@@ -26,7 +26,7 @@
 		"intro": {
 			"text": "intro.md",
 			"credits": "",
-			"code": "courseData.sh"
+			"courseData": "courseData.sh"
 		},
 		"finish": {
 			"text": "finish.md"
@@ -40,7 +40,18 @@
 	],
 	"environment": {
 		"uilayout": "editor-terminal",
-		"uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nYour Kubernetes cluster is started in the background\u001b[m\r\n"
+		"uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nYour Kubernetes cluster is started in the background\u001b[m\r\n",
+		"showdashboard": true,
+		"dashboards": [
+			{
+				"name": "Display 80",
+				"port": 80
+			},
+			{
+				"name": "Display 30000",
+				"port": 30000
+			}
+		]
 	},
 	"backend": {
 		"imageid": "minikube"
