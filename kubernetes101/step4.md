@@ -7,10 +7,13 @@ To scale an app, we can do it two ways: by command or by definition. By command 
 `kubectl scale deployments/webapp1 --replicas=4`{{execute}}
 
 If you want to change it by definition, change the replica value in `deployment.yaml`. Then apply the new definition by running the following command:
+
 `kubectl apply -f deployment.yaml`{{execute}}
 
 Now refresh the app. You should see different hostnames echoed on the screen.
 
 You can also check the amount of pods by running the following command:
+
 `kubectl get pods webapp1`{{execute}}
+
 `kubectl get deployment webapp1`{{execute}}

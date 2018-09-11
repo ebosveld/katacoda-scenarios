@@ -5,7 +5,7 @@ Normally we'd create an _ingress controller_ by a definition as we've done with 
 
 `minikube addons enable ingress`{{execute}}
 
-Now we need to tell the ingress controller how to route the traffic. We do this by creating an _ingress_ component with routing rules. In the following example we use `[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com` as hostname so we can actually try it out. We map /app1 to the load balancing service called _webapp1-svc_.
+Now we need to tell the ingress controller how to route the traffic. We do this by creating an _ingress_ component with routing rules. In the following example we use a special Katacoda url as hostname so we can actually try it out. We map /app1 to the load balancing service called _webapp1-svc_.
 
 Copy the definition below.
 
@@ -26,9 +26,11 @@ spec:
 </pre>
 
 Once this is copied into the editor you can type in the following command in the terminal to create the routing rules.
+
 `kubectl apply -f routing.yaml`{{execute}}
 
 Check the status using the following commands:
+
 `kubectl get ing`{{execute}}
 
 `kubectl describe ing`{{execute}}
