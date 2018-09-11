@@ -23,12 +23,15 @@ spec:
 </pre>
 
 Once this is copied into the editor you can type in the following command in the terminal to start the deployment.
+
 `kubectl apply -f deployment.yaml`{{execute}}
 
 To see if the deployment is ready, type the following command in the terminal.
+
 `kubectl get deployments`{{execute}}
 
 To see the actual pods, use the following command.
+
 `kubectl get pods`{{execute}}
 
 ## Pro tip

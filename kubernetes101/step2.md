@@ -19,9 +19,11 @@ spec:
 </pre>
 
 Once this is copied into the editor you can type in the following command in the terminal to create the service.
+
 `kubectl apply -f service.yaml`{{execute}}
 
 To see if the deployment is ready, type the following command in the terminal.
+
 `kubectl get services`{{execute}}
 
 ## Pro tip
